@@ -3,7 +3,7 @@
 <html>
 
   <head>
-    <title></title>
+    <title>The Code Review newsletter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Roboto:100,400" rel="stylesheet">
@@ -18,7 +18,7 @@
     </div>
     <div class="main">
       <form action="index.html" method="post">
-        <fieldset>
+        <fieldset class="contact-info">
             <legend>Contact information</legend>
 
             <label for="full-name">Full Name</label>
@@ -36,6 +36,7 @@
             <label for="city">City</label>
             <input type="text" name="contact" id="city">
 
+            <label for="states">State</label>
             <select name="contact" id="states">
                 <option value="alabama">Alabama</option>
                 <option value="alaska">Alaska</option>
@@ -90,13 +91,32 @@
             </select>
             <label for="zip">Zip Code</label>
             <input type="text" name="contact" id="zip">
-            <hr/>
 
         </fieldset>
         <fieldset>
-          <legend>Newsletter</legend>
+          <legend class="newsletters-section">Newsletter</legend>
+          <label>Select the newsletters you would like to receive</label>
+          <input type="checkbox" id="html-news" value="html-news" name="newsletter">
+          <label for="html-news">HTML news</label><br/>
+          <input type="checkbox" id="css-news" value="css-news" name="newsletter">
+          <label for="css-news">CSS news</label><br/>
+          <input type="checkbox" id="javascript-news" value="javascript-news" name="newsletter">
+          <label for="javascript-news">HTML news</label>
+          <label>Newsletter format</label>
+          <input type="radio" id="html" value="html" name="newsletter-format">
+          <label for="html">HTML</label><br/>
+          <input type="radio" id="plain" value="plain" name="newsletter-format">
+          <label for="plain">Plain text</label>
+          <label for="topics">Other topics you'd like to hear about</label>
+          <textarea id="topics"></textarea>
+
         </fieldset>
+
+        <button type="submit" for="contact">Sign up</button>
       </form>
+    </div>
+    <div class="footer">
+      <h6>Copyright The Code Review</h6>
     </div>
   </body>
 
