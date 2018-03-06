@@ -24,10 +24,7 @@ fieldset {
 ==================================== */
 
 .form-top {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	text-align: center;
 }
 
 .form-top,
@@ -37,26 +34,73 @@ fieldset {
 	margin: 0 auto;
 }
 
-form {
-	border-top: 2px solid black;
-	padding-top: 1.5em;
+h1 {
+	background-color: #191970;
+	color: white;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+	padding: 5% 5%;
+	margin: 0 auto;
+	font-size: 1.5em;
 }
 
+legend {
+	font-size: 1.5em;
+	color: black;
+	padding: 6% 0 6% 0;
+}
+
+.form-top {
+	border-bottom: 3px solid black;
+	margin-bottom: 1%;
+}
+
+form {
+	border-top: 2px solid black;
+}
+
+select,
 input,
 textarea {
 	width: 100%;
 	margin: 1em 0;
 }
 
+input,
+select {
+	background-color: #D3D3D3;
+	color: #A9A9A9;
+	padding: 3%;
+	border-radius: 5px;
+}
+
+input[value="Required"] {
+	text-align: right;
+	font-style: italic;
+}
+
+.checkbox-bottom,
+.radio-bottom {
+	flex-direction: row;
+}
+
+.checkbox-bottom label,
+.checkbox-bottom input,
+.radio-bottom label,
+.radio-bottom input {
+	width: 3%;
+	flex: 1;
+}
 
 .contact-info {
 	border-bottom: 2px solid black;
 	padding-bottom: 1.5em;
 }
 
-.newsletters-section {
+/* .newsletters-section {
 	padding-top: 1.5em;
-}
+} */
 
 
 /* =================================

@@ -11,15 +11,15 @@
   </head>
 
   <body>
-    <div class="form-top">
       <h1>The Code Review</h1>
+    <div class="form-top">
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how our code is doing in your inbox
     </div>
     <div class="main">
       <form action="index.html" method="post">
         <fieldset class="contact-info">
-            <legend>Contact information</legend>
+            <legend>Contact Information</legend>
 
             <label for="full-name">Full Name</label>
             <input type="text" name="contact" id="full-name" value="Required" required>
@@ -37,7 +37,7 @@
             <input type="text" name="contact" id="city">
 
             <label for="states">State</label>
-            <select name="contact" id="states">
+            <select name="contact" id="states" value="Choose State">
                 <option value="alabama">Alabama</option>
                 <option value="alaska">Alaska</option>
                 <option value="arizona">Arizona</option>
@@ -96,17 +96,21 @@
         <fieldset>
           <legend class="newsletters-section">Newsletter</legend>
           <label>Select the newsletters you would like to receive</label>
-          <input type="checkbox" id="html-news" value="html-news" name="newsletter">
-          <label for="html-news">HTML news</label><br/>
-          <input type="checkbox" id="css-news" value="css-news" name="newsletter">
-          <label for="css-news">CSS news</label><br/>
-          <input type="checkbox" id="javascript-news" value="javascript-news" name="newsletter">
-          <label for="javascript-news">HTML news</label>
+          <div class="checkbox-bottom">
+            <input type="checkbox" id="html-news" value="html-news" name="newsletter">
+            <label for="html-news">HTML News</label><br/>
+            <input type="checkbox" id="css-news" value="css-news" name="newsletter">
+            <label for="css-news">CSS News</label><br/>
+            <input type="checkbox" id="javascript-news" value="javascript-news" name="newsletter">
+            <label for="javascript-news">Javascript News</label>
+          </div>
           <label>Newsletter format</label>
-          <input type="radio" id="html" value="html" name="newsletter-format">
-          <label for="html">HTML</label><br/>
-          <input type="radio" id="plain" value="plain" name="newsletter-format">
-          <label for="plain">Plain text</label>
+          <div class="radio-bottom">
+            <input type="radio" id="html" value="html" name="newsletter-format">
+            <label for="html">HTML</label><br/>
+            <input type="radio" id="plain" value="plain" name="newsletter-format">
+            <label for="plain">Plain text</label>
+          </div>
           <label for="topics">Other topics you'd like to hear about</label>
           <textarea id="topics"></textarea>
 
