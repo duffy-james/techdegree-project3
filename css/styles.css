@@ -75,9 +75,14 @@ select {
 	border-radius: 5px;
 }
 
+select {
+	height: 3.5em;
+}
+
 input[value="Required"] {
 	text-align: right;
 	font-style: italic;
+	padding-right: 5%;
 }
 
 .checkbox-bottom,
