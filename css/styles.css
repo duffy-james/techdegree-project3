@@ -8,6 +8,7 @@
 
 body {
 	font-family: 'Lora', serif;
+	background-color: #FFFFE0;
 }
 
 form,
@@ -21,6 +22,33 @@ fieldset {
 	padding: 0;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+	background-color: #CCCCFF;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 /* =================================
   Base Layout Styles
@@ -155,11 +183,24 @@ h6 {
 
 @media (min-width: 768px) {
 
+
 	.form-top,
 	.main,
 	.footer {
 		width: 60%;
 		margin: 0 auto;
+	}
+
+	form {
+		margin-top: 5px;
+	}
+
+	.form-top {
+		padding-top: 5%;
+	}
+
+	legend {
+		padding: 8% 0 5% 0;
 	}
 
 	.contact-info span {
@@ -175,6 +216,11 @@ h6 {
 	span input,
 	span select {
 		width: 70%;
+	}
+
+	button {
+		padding: 3% 1%;
+		font-size: 1.3em;
 	}
 
 }
