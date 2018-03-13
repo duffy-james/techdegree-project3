@@ -158,6 +158,10 @@ label[for="newsletter"] {
 	padding-bottom: 1.5em;
 }
 
+.newsletter-format {
+	padding-top: 3%;
+}
+
 button {
 	background-color: #40E0D0;
 	color: white;
